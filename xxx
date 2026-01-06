@@ -23,7 +23,7 @@ Lampa.Listener.follow('full', function(e) {
       $('.view--online').each(function() {
         var $torrentButton = $(this);
         var $parent = $torrentButton.parent();
-        var $firstChild = $parent.children().first();
+        var $firstChild = $parent.children().eq(5);
 
         if (!$torrentButton.is($firstChild)) {
           $torrentButton.prependTo($parent);
