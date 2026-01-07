@@ -17,36 +17,6 @@
 
 /* ===== ИКОНКИ =====*/
 function button() {
-Lampa.Listener.follow('full', function(e) {
-  if (e.type == 'complite') {
-    setTimeout(function() {
-      $('.view--online').each(function() {
-        var $torrentButton = $(this);
-        var $parent = $torrentButton.parent();
-        var $firstChild = $parent.children().first();
-
-        if (!$torrentButton.is($firstChild)) {
-          $torrentButton.prependTo($parent);
-        }
-      });
-      $('.view--online_mod').each(function() {
-        var $onmodButton = $(this);
-        var $parent = $onmodButton.parent();
-        var $secondChild = $parent.children().eq(1); // Выбираем второй элемент
-
-        if (!$onmodButton.is($secondChild)) {
-          $onmodButton.insertBefore($secondChild); // Вставляем $onmodButton перед вторым элементом
-        }
-      });
-      $('.view--torrent').each(function() {
-        var $torrentButton = $(this);
-        var $parent = $torrentButton.parent();
-        var $thirdChild = $parent.children().eq(2); // Выбираем третий элемент
-
-        if (!$torrentButton.is($thirdChild)) {
-          $torrentButton.insertAfter($parent.children().eq(1)); // Вставляем $torrentButton после второго элемента
-        }
-      });
     //Lampa.Controller.toggle('full_start');
     $(".view--online", Lampa.Activity.active().activity.render()).empty().append('<svg width="190px" height="190px" viewBox="0 0 64.00 64.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet" fill="#ffffff" stroke="#ffffff" stroke-width="0.00064" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="2.944"></g><g id="SVGRepo_iconCarrier"><path d="M32 2C15.432 2 2 15.432 2 32s13.432 30 30 30s30-13.432 30-30S48.568 2 32 2zm10.345 20.61H27.68v6.673h12.854v5.039H27.68v12.166h-6.024V17.512h20.689v5.098z" fill="#d05025"></path></g></svg>&nbsp;&nbsp;Filmix');
     $(".view--torrent", Lampa.Activity.active().activity.render()).empty().append("<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 48 48' width='48px' height='48px'><path fill='#4caf50' fill-rule='evenodd' d='M23.501,44.125c11.016,0,20-8.984,20-20 c0-11.015-8.984-20-20-20c-11.016,0-20,8.985-20,20C3.501,35.141,12.485,44.125,23.501,44.125z' clip-rule='evenodd'/><path fill='#fff' fill-rule='evenodd' d='M43.252,27.114C39.718,25.992,38.055,19.625,34,11l-7,1.077 c1.615,4.905,8.781,16.872,0.728,18.853C20.825,32.722,17.573,20.519,15,14l-8,2l10.178,27.081c1.991,0.67,4.112,1.044,6.323,1.044 c0.982,0,1.941-0.094,2.885-0.232l-4.443-8.376c6.868,1.552,12.308-0.869,12.962-6.203c1.727,2.29,4.089,3.183,6.734,3.172 C42.419,30.807,42.965,29.006,43.252,27.114z' clip-rule='evenodd'/></svg><span>Торренты</span>");
