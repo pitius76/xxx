@@ -1,10 +1,11 @@
 (function() {
     'use strict';
-Lampa.Listener.follow('full', function(e) {
-            if (e.type == 'complite') 
-                setTimeout(function() {
-       $('.shots-view-button').remove();
-         }, 0)
-     }     
-         });
+    
+    Lampa.Listener.follow('full', function(e) {
+        if (e.type == 'complite') {
+            setTimeout(function() {
+                $('.shots-view-button').remove();
+            }, 0);
+        }
+    });
 })();
