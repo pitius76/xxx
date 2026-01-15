@@ -1,3 +1,5 @@
+(function() {
+    'use strict';
 Lampa.Listener.follow('full', function(e) {
             if (e.type == 'complite') 
                 setTimeout(function() {
@@ -5,5 +7,4 @@ Lampa.Listener.follow('full', function(e) {
          }, 0)
      }     
          });
-
-
+})();
