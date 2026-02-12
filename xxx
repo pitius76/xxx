@@ -1,7 +1,7 @@
 [Interface]
 Address = 172.16.0.2/32, 2606:4700:110:8484:667:4226:d3cf:f6d8/128
 DNS = 176.99.11.77, 80.78.247.254, 2a00:f940:2:4:2::5d1b, 2a00:f940:2:4:2::21ed
-IncludedApplications = org.smarttube.beta, com.google.android.youtube.tv, com.google.android.youtube.tvmusic, com.anydesk.anydeskandroid
+IncludedApplications = org.smarttube.beta, com.google.android.youtube.tv, com.google.android.youtube.tvmusic, com.anydesk.anydeskandroid, org.telegram.messenger, com.whatsapp
 MTU = 1280
 Jc = 5
 Jmin = 100
